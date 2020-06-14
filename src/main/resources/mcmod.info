@@ -1,0 +1,16 @@
+[
+{
+  "modid": "skinlayercontrol",
+  "name": "Skin Layer Control",
+  "description": "EMCApp: Adds customizable profiles to animate skin layers.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Whodundid, Mr.JamminOtter"],
+  "credits": "Requires 'EnhancedMC' version 1.0 to work!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["enhancedmc"]
+}
+]
