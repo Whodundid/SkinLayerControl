@@ -51,7 +51,7 @@ public class SLCGlobalOptionsWindow extends WindowParent {
 		defaultFacingBtn = new WindowButton(this, midX + 53, midY + 3, 40, 20, isFront);
 		saveStateBtn = new WindowButton(this, midX + 53, midY + 67, 40, 20, saveStates);
 		
-		addObject(null, doneBtn, resetBtn, intervalBtn, loadProfileBtn, defaultProfileResetBtn, defaultFacingBtn, saveStateBtn);
+		addObject(doneBtn, resetBtn, intervalBtn, loadProfileBtn, defaultProfileResetBtn, defaultFacingBtn, saveStateBtn);
 	}
 	
 	@Override
@@ -126,4 +126,5 @@ public class SLCGlobalOptionsWindow extends WindowParent {
     	slc.currentPart = null;
     	fileUpAndClose();
 	}
+	
 }

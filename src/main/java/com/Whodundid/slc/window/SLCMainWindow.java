@@ -75,8 +75,8 @@ public class SLCMainWindow extends WindowParent {
 		resetProfileBtn = new WindowButton(this, midX - 1, midY + 104, 45, 20, "Reset");
 		loadProfileBtn = new WindowButton(this, midX + 51, midY + 104, 45, 20, "Load");
 		
-		addObject(null, larmBtn, rarmBtn, llegBtn, rlegBtn, headBtn, jackBtn, capeBtn);
-		addObject(null, optionsBtn, flipBtn, stateBtn, valueUpBtn, valueDownBtn, resetProfileBtn, loadProfileBtn);
+		addObject(larmBtn, rarmBtn, llegBtn, rlegBtn, headBtn, jackBtn, capeBtn);
+		addObject(optionsBtn, flipBtn, stateBtn, valueUpBtn, valueDownBtn, resetProfileBtn, loadProfileBtn);
 	}
 	
 	@Override
@@ -531,4 +531,5 @@ public class SLCMainWindow extends WindowParent {
 	private int getOffset(int value) { return (11 - 3 * Integer.toString(value).length()); }
 	private void openPartGUI() { EnhancedMC.displayWindow(new SLCPartWindow(), this); }
 	private void openOptionsGui() { EnhancedMC.displayWindow(new SLCGlobalOptionsWindow(), this); }
+	
 }

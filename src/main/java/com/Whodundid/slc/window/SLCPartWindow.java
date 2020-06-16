@@ -72,7 +72,7 @@ public class SLCPartWindow extends WindowParent {
 		twoFiveDownBtn = new WindowButton(this, midX - 67, midY + 76, 25, 20, "-25");
 		fiveDownBtn = new WindowButton(this, midX - 94, midY + 76, 20, 20, "-5");
 		
-		addObject(null, doneBtn, resetBtn, fiveUpBtn, twoFiveUpBtn, hundredUpBtn, hundredDownBtn, twoFiveDownBtn, fiveDownBtn);
+		addObject(doneBtn, resetBtn, fiveUpBtn, twoFiveUpBtn, hundredUpBtn, hundredDownBtn, twoFiveDownBtn, fiveDownBtn);
 	}
 
 	@Override

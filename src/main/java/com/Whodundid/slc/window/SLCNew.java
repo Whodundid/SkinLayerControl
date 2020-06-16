@@ -59,7 +59,7 @@ public class SLCNew extends WindowParent {
 			lastY = c.getY();
 		}
 		
-		addObject(null, viewer, play, stop, globalSetting);
+		addObject(viewer, play, stop, globalSetting);
 	}
 	
 	private void buildParts() {
@@ -102,8 +102,8 @@ public class SLCNew extends WindowParent {
 			
 			displayLabel = new WindowLabel(instance, greyInner.startX + 6, greyInner.midY - 3, name, EColors.cyan);
 			
-			addObject(null, blackBack, greyInner);
-			addObject(null, displayLabel);
+			addObject(blackBack, greyInner);
+			addObject(displayLabel);
 			
 			endY = yPos + 30;
 		}
