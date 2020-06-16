@@ -17,10 +17,11 @@ public class SLCGlobalOptionsWindow extends WindowParent {
 	String isFront, resetMode, saveStates;
 	int currentProfile;
 	
-	public SLCGlobalOptionsWindow() { super(); }
-	public SLCGlobalOptionsWindow(Object oldGuiIn) { super(oldGuiIn); }
-	public SLCGlobalOptionsWindow(int posX, int posY) { super(posX, posY); }
-	public SLCGlobalOptionsWindow(int posX, int posY, Object oldGuiIn) { super(posX, posY, oldGuiIn); }
+	public SLCGlobalOptionsWindow() {
+		super();
+		aliases.add("slcoptions", "skinoptions");
+		windowIcon = SLCResources.icon;
+	}
 	
 	@Override
 	public void initWindow() {

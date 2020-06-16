@@ -36,16 +36,16 @@ public class SLCMainWindow extends WindowParent {
 	int hBD, jBD, caBD, laBD, raBD, llBD, rlBD;
 	boolean oneClick, alreadyPressed;
 	
-	public SLCMainWindow() { super(); }
-	public SLCMainWindow(Object oldGuiIn) { super(oldGuiIn); }
-	public SLCMainWindow(int posX, int posY) { super(posX, posY); }
-	public SLCMainWindow(int posX, int posY, Object oldGuiIn) { super(posX, posY, oldGuiIn); }
+	public SLCMainWindow() {
+		super();
+		aliases.add("slcmain");
+		windowIcon = SLCResources.icon;
+	}
 	
 	@Override
 	public void initWindow() {
 		setObjectName("SLC Menu");
 		centerObjectWithSize(200, 256);
-		super.initWindow();
 		playerSkin = mc.thePlayer.getLocationSkin();
 		skinType = mc.thePlayer.getSkinType();
 	}

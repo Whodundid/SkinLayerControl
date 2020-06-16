@@ -14,7 +14,7 @@ import com.Whodundid.core.windowLibrary.windowTypes.WindowParent;
 import com.Whodundid.core.windowLibrary.windowTypes.interfaces.IActionObject;
 import com.Whodundid.slc.SLCApp;
 import com.Whodundid.slc.util.LayerTypes;
-
+import com.Whodundid.slc.util.SLCResources;
 import net.minecraft.util.ResourceLocation;
 
 public class SLCNew extends WindowParent {
@@ -38,6 +38,7 @@ public class SLCNew extends WindowParent {
 		setDimensions(400, 254);
 		playerSkin = mc.thePlayer.getLocationSkin();
 		playerCape = mc.thePlayer.getLocationCape();
+		windowIcon = SLCResources.icon;
 	}
 	
 	@Override

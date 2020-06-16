@@ -16,7 +16,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class SLCPartWindow extends WindowParent {
 	
-	SLCApp sls;
+	SLCApp sls = (SLCApp) RegisteredApps.getApp(AppType.SLC);
 	ResourceLocation playerSkin;
 	ResourceLocation playerCape;
 	GameSettings mcSettings;
@@ -31,16 +31,15 @@ public class SLCPartWindow extends WindowParent {
 	boolean ssIsSelectable, bdelayIsSelectable, bdurationIsSelectable;
 	boolean isEnumEnabled;
 	
-	public SLCPartWindow() { super(); }
-	public SLCPartWindow(Object oldGuiIn) { super(oldGuiIn); }
-	public SLCPartWindow(int posX, int posY) { super(posX, posY); }
-	public SLCPartWindow(int posX, int posY, Object oldGuiIn) { super(posX, posY, oldGuiIn); }
+	public SLCPartWindow() {
+		super();
+		windowIcon = SLCResources.icon;
+	}
 	
 	@Override
 	public void initWindow() {
 		setDimensions(200, 256);
-		super.initWindow();
-		sls = (SLCApp) RegisteredApps.getApp(AppType.SLC);
+		
 		mcSettings = mc.gameSettings;
 		
 		part = sls.getPart(sls.currentPart);

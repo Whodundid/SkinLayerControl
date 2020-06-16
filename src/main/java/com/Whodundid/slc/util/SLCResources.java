@@ -12,6 +12,7 @@ public class SLCResources extends AppResources {
 	
 	public static final EResource logo0 = new EResource("skinlayerswitcher", "logo_0.png");
 	public static final EResource logo1 = new EResource("skinlayerswitcher", "logo_1.png");
+	public static final EResource icon = new EResource("skinlayerswitcher", "icon.png");
 	
 	@Override
 	public void registerResources() {
@@ -22,6 +23,7 @@ public class SLCResources extends AppResources {
 		
 		logo0.register();
 		logo1.register();
+		icon.register();
 	}
 	
 }
